@@ -14,6 +14,7 @@ const Cart = (props) => {
           <CartItem
             key={item.id}
             item={{
+              id: item.id,
               title: item.name,
               quantity: item.quantity,
               total: item.totalPrice,
@@ -21,9 +22,6 @@ const Cart = (props) => {
             }}
           />
         ))}
-        {/* <CartItem
-          item={{ title: "Test Item", quantity: 3, total: 18, price: 6 }}
-        /> */}
       </ul>
     </Card>
   );
